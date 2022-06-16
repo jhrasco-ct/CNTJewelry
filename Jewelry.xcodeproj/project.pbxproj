@@ -15,6 +15,16 @@
 		9F4E17F72859A3970041F79E /* FancyCutProB7-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F4E17F62859A3970041F79E /* FancyCutProB7-Regular.otf */; };
 		9F4E17FA2859AF7D0041F79E /* LoginContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E17F92859AF7D0041F79E /* LoginContainerView.swift */; };
 		9F4E18012859B39F0041F79E /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E18002859B39F0041F79E /* PrimaryButton.swift */; };
+		9F527BBE285ACCC2002E1484 /* DependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F527BBD285ACCC2002E1484 /* DependencyInjector.swift */; };
+		9F527BC1285AE04B002E1484 /* ServicesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F527BC0285AE04B002E1484 /* ServicesContainer.swift */; };
+		9F527BC3285AE078002E1484 /* LocalAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F527BC2285AE078002E1484 /* LocalAuthenticationService.swift */; };
+		9F527BC6285AE9A4002E1484 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F527BC5285AE9A4002E1484 /* Store.swift */; };
+		9F527BC8285AE9F3002E1484 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F527BC7285AE9F3002E1484 /* Loadable.swift */; };
+		9F527BCA285AEAC0002E1484 /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F527BC9285AEAC0002E1484 /* CancelBag.swift */; };
+		9F527BCC285AECA4002E1484 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F527BCB285AECA4002E1484 /* AppState.swift */; };
+		9F527BCE285AF1D9002E1484 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F527BCD285AF1D9002E1484 /* AppEnvironment.swift */; };
+		9F527BD0285AF44E002E1484 /* SystemEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F527BCF285AF44E002E1484 /* SystemEventsHandler.swift */; };
+		9F527BD3285B05F3002E1484 /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 9F527BD2285B05F3002E1484 /* SwiftyBeaver */; };
 		9F6851EF285823E6003B7876 /* JewelryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6851EE285823E6003B7876 /* JewelryApp.swift */; };
 		9F6851F1285823E6003B7876 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6851F0285823E6003B7876 /* ContentView.swift */; };
 		9F6851F3285823E8003B7876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6851F2285823E8003B7876 /* Assets.xcassets */; };
@@ -39,6 +49,15 @@
 		9F4E17F62859A3970041F79E /* FancyCutProB7-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutProB7-Regular.otf"; sourceTree = "<group>"; };
 		9F4E17F92859AF7D0041F79E /* LoginContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContainerView.swift; sourceTree = "<group>"; };
 		9F4E18002859B39F0041F79E /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		9F527BBD285ACCC2002E1484 /* DependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjector.swift; sourceTree = "<group>"; };
+		9F527BC0285AE04B002E1484 /* ServicesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesContainer.swift; sourceTree = "<group>"; };
+		9F527BC2285AE078002E1484 /* LocalAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationService.swift; sourceTree = "<group>"; };
+		9F527BC5285AE9A4002E1484 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		9F527BC7285AE9F3002E1484 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		9F527BC9285AEAC0002E1484 /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
+		9F527BCB285AECA4002E1484 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		9F527BCD285AF1D9002E1484 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		9F527BCF285AF44E002E1484 /* SystemEventsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemEventsHandler.swift; sourceTree = "<group>"; };
 		9F6851EB285823E6003B7876 /* Jewelry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jewelry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6851EE285823E6003B7876 /* JewelryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JewelryApp.swift; sourceTree = "<group>"; };
 		9F6851F0285823E6003B7876 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F68520A28583194003B7876 /* Rswift in Frameworks */,
+				9F527BD3285B05F3002E1484 /* SwiftyBeaver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +153,34 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		9F527BBC285ACC9F002E1484 /* Injected */ = {
+			isa = PBXGroup;
+			children = (
+				9F527BCB285AECA4002E1484 /* AppState.swift */,
+				9F527BC0285AE04B002E1484 /* ServicesContainer.swift */,
+				9F527BBD285ACCC2002E1484 /* DependencyInjector.swift */,
+			);
+			path = Injected;
+			sourceTree = "<group>";
+		};
+		9F527BBF285ADFF3002E1484 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9F527BC2285AE078002E1484 /* LocalAuthenticationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9F527BC4285AE998002E1484 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9F527BC5285AE9A4002E1484 /* Store.swift */,
+				9F527BC7285AE9F3002E1484 /* Loadable.swift */,
+				9F527BC9285AEAC0002E1484 /* CancelBag.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		9F6851E2285823E6003B7876 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +201,9 @@
 			isa = PBXGroup;
 			children = (
 				9F6851FD28582E6B003B7876 /* System */,
+				9F527BBC285ACC9F002E1484 /* Injected */,
+				9F527BC4285AE998002E1484 /* Utilities */,
+				9F527BBF285ADFF3002E1484 /* Services */,
 				9F4E17E7285970880041F79E /* UI */,
 				9F6851FC28582E42003B7876 /* Modules */,
 				9F68520028582EA0003B7876 /* Resources */,
@@ -174,7 +225,8 @@
 			isa = PBXGroup;
 			children = (
 				9F6851EE285823E6003B7876 /* JewelryApp.swift */,
-				9F4E17E628596C030041F79E /* Info.plist */,
+				9F527BCD285AF1D9002E1484 /* AppEnvironment.swift */,
+				9F527BCF285AF44E002E1484 /* SystemEventsHandler.swift */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -201,6 +253,7 @@
 		9F68520028582EA0003B7876 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9F4E17E628596C030041F79E /* Info.plist */,
 				9F4E17EB285978920041F79E /* Fonts */,
 				9F4E17DF28596A9A0041F79E /* R+SwiftUI */,
 				9F68520B2858324D003B7876 /* R.generated.swift */,
@@ -239,6 +292,7 @@
 			name = Jewelry;
 			packageProductDependencies = (
 				9F68520928583194003B7876 /* Rswift */,
+				9F527BD2285B05F3002E1484 /* SwiftyBeaver */,
 			);
 			productName = Jewelry;
 			productReference = 9F6851EB285823E6003B7876 /* Jewelry.app */;
@@ -270,6 +324,7 @@
 			mainGroup = 9F6851E2285823E6003B7876;
 			packageReferences = (
 				9F68520828583194003B7876 /* XCRemoteSwiftPackageReference "R.swift" */,
+				9F527BD1285B05F3002E1484 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
 			);
 			productRefGroup = 9F6851EC285823E6003B7876 /* Products */;
 			projectDirPath = "";
@@ -330,12 +385,21 @@
 				9F4E17E328596AD80041F79E /* ImageResource+SwiftUI.swift in Sources */,
 				9F68521528588820003B7876 /* ContentViewModel.swift in Sources */,
 				9F4E17E528596B150041F79E /* FontResource+SwiftUI.swift in Sources */,
+				9F527BCA285AEAC0002E1484 /* CancelBag.swift in Sources */,
 				9F4E18012859B39F0041F79E /* PrimaryButton.swift in Sources */,
 				9F6851EF285823E6003B7876 /* JewelryApp.swift in Sources */,
+				9F527BBE285ACCC2002E1484 /* DependencyInjector.swift in Sources */,
+				9F527BD0285AF44E002E1484 /* SystemEventsHandler.swift in Sources */,
 				9F68521928588D4A003B7876 /* LoginViewModel.swift in Sources */,
+				9F527BCC285AECA4002E1484 /* AppState.swift in Sources */,
+				9F527BC6285AE9A4002E1484 /* Store.swift in Sources */,
+				9F527BC8285AE9F3002E1484 /* Loadable.swift in Sources */,
+				9F527BCE285AF1D9002E1484 /* AppEnvironment.swift in Sources */,
 				9F68521028588100003B7876 /* LoginView.swift in Sources */,
 				9F68521728588D35003B7876 /* OnboardingViewModel.swift in Sources */,
+				9F527BC1285AE04B002E1484 /* ServicesContainer.swift in Sources */,
 				9F4E17FA2859AF7D0041F79E /* LoginContainerView.swift in Sources */,
+				9F527BC3285AE078002E1484 /* LocalAuthenticationService.swift in Sources */,
 				9F68520C2858324D003B7876 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,7 +530,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Jewelry/Resources\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Jewelry/System/Info.plist;
+				INFOPLIST_FILE = Jewelry/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -494,7 +558,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Jewelry/Resources\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Jewelry/System/Info.plist;
+				INFOPLIST_FILE = Jewelry/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -537,6 +601,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9F527BD1285B05F3002E1484 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyBeaver/SwiftyBeaver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
 		9F68520828583194003B7876 /* XCRemoteSwiftPackageReference "R.swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
@@ -548,6 +620,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9F527BD2285B05F3002E1484 /* SwiftyBeaver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F527BD1285B05F3002E1484 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
+			productName = SwiftyBeaver;
+		};
 		9F68520928583194003B7876 /* Rswift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9F68520828583194003B7876 /* XCRemoteSwiftPackageReference "R.swift" */;
