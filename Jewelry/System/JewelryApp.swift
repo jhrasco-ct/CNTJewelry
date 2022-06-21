@@ -9,10 +9,23 @@ import SwiftUI
 
 @main
 struct JewelryApp: App {
+  init() {
+    configureLogger()
+  }
+
   var body: some Scene {
     WindowGroup {
-      ContentView()
+      let environment = AppEnvironment.bootstrap()
+      ContentView(container: environment.container)
     }
+  }
+
+  // MARK: - Private
+
+  private func configureLogger() {
+    #if DEBUG
+    Logger.configure()
+    #endif
   }
 }
 

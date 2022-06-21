@@ -15,14 +15,14 @@ struct AppEnvironment {
 extension AppEnvironment {
   static func bootstrap() -> AppEnvironment {
     let appState = Store<AppState>(AppState())
-    let services = configuredServices()
-    let diContainer = DIContainer(appState: appState, services: services)
+    let interactors = configuredInteractors(appState: appState)
+    let diContainer = DIContainer(appState: appState, interactors: interactors)
     let systemEventsHandler = RealSystemEventsHandler(container: diContainer)
     return AppEnvironment(container: diContainer, systemEventsHandler: systemEventsHandler)
   }
 
-  private static func configuredServices() -> DIContainer.Services {
-    let localAuthenticationService = RealLocalAuthenticationService()
-    return .init(localAuthenticationService: localAuthenticationService)
+  private static func configuredInteractors(appState: Store<AppState>) -> DIContainer.Interactors {
+    let localAuthenticationInteractor = RealLocalAuthenticationInteractor(appState: appState)
+    return .init(localAuthenticationInteractor: localAuthenticationInteractor)
   }
 }

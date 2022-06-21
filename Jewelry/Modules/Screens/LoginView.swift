@@ -5,9 +5,12 @@
 //  Created by John Harold Rasco on 6/14/22.
 //
 
+import Combine
 import SwiftUI
 
 struct LoginView: View {
+  @Environment(\.injected) private var injected: DIContainer
+
   var body: some View {
     LoginContainerView {
         Text("WELCOME")
@@ -30,14 +33,23 @@ struct LoginView: View {
           Spacer()
             .frame(height: 24.0)
 
-          PrimaryButton(title: "FACE/TOUCH ID LOGIN", action: {
-
-          })
+          PrimaryButton(title: "FACE/TOUCH ID LOGIN", action: requestBiometricsAuthentication)
         }
         .padding(.horizontal, 32.0)
     }
   }
 }
+
+// MARK: - Side Effects
+
+private extension LoginView {
+  func requestBiometricsAuthentication() {
+    injected.interactors.localAuthenticationInteractor
+      .authenticate()
+  }
+}
+
+// MARK: - Preview
 
 struct LoginView_Previews: PreviewProvider {
   static var previews: some View {
