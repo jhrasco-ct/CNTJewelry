@@ -36,7 +36,7 @@ struct LoginContainerView<Content>: View where Content: View {
         content()
       }
       .foregroundColor(Color(R.color.white))
-      .padding(.vertical, 28.0)
+      .padding(.vertical, 50.0)
 
       HStack {
         Spacer()
@@ -45,7 +45,7 @@ struct LoginContainerView<Content>: View where Content: View {
           .scaledToFit()
           .frame(height: proxy.size.width * 0.78)
       }
-      .padding(.top, 80)
+      .padding(.top, 102)
     }
     .background(Color(R.color.codGray))
   }

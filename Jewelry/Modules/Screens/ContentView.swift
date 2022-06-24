@@ -19,7 +19,7 @@ struct ContentView: View {
         OnboardingView()
           .inject(container)
       } else {
-        LoginView()
+        PreLoginView()
           .inject(container)
       }
     }
