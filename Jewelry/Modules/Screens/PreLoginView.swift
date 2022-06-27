@@ -14,7 +14,7 @@ struct PreLoginView: View {
 
   var body: some View {
     NavigationView {
-      LoginContainerView {
+      LoginContainerView { _ in
         Text("WELCOME")
           .font(R.font.brilliantCutProB7Medium, size: 22.0)
           .padding(.horizontal, 29.0)

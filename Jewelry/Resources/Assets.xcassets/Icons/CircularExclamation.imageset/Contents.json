@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "CircularExclamation.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct LoginContainerView<Content>: View where Content: View {
-  let content: () -> Content
+  let content: (GeometryProxy) -> Content
 
-  init(@ViewBuilder content: @escaping () -> Content) {
+  init(@ViewBuilder content: @escaping (GeometryProxy) -> Content) {
     self.content = content
   }
 
@@ -33,7 +33,7 @@ struct LoginContainerView<Content>: View where Content: View {
 
         Spacer()
 
-        content()
+        content(proxy)
       }
       .foregroundColor(Color(R.color.white))
       .padding(.vertical, 50.0)
@@ -53,7 +53,7 @@ struct LoginContainerView<Content>: View where Content: View {
 
 struct LoginContainerView_Previews: PreviewProvider {
   static var previews: some View {
-    LoginContainerView { }
+    LoginContainerView { _ in }
   }
 }
 

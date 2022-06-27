@@ -14,7 +14,10 @@ struct LoginView: View {
 
   var body: some View {
     ZStack(alignment: .top) {
-      LoginContainerView {
+      LoginContainerView { proxy in
+        Spacer()
+          .frame(height: proxy.size.height * 0.15)
+
         Text("WELCOME")
           .font(R.font.brilliantCutProB7Medium, size: 22.0)
           .padding(.horizontal, 29.0)
@@ -25,10 +28,19 @@ struct LoginView: View {
           .padding(.top, 13.0)
 
         Spacer()
-          .frame(height: 56.0)
+          .frame(height: proxy.size.height * 0.02)
 
         Group {
-          PrimaryButton(title: "LOG IN") { }
+          FloatingTextField(placeholder: "EMAIL", text: $email, hasError: hasError)
+
+          Spacer()
+            .frame(height: 28.0)
+
+          FloatingTextField(placeholder: "PASSWORD", text: $password, hasError: hasError, isSecured: true)
+
+          Spacer(minLength: 30.0 + proxy.size.height * 0.02)
+
+          PrimaryButton(title: "LOG IN", isDisabled: canSubmit.not()) { }
         }
         .padding(.horizontal, 32.0)
       }
@@ -41,7 +53,33 @@ struct LoginView: View {
       }
       .padding(.leading, 36.0)
     }
+    .ignoresSafeArea(.keyboard)
     .navigationBarHidden(true)
+  }
+
+  // MARK: - Private
+
+  @State private var email = String()
+  @State private var password = String()
+  @State private var errorMessage = String()
+
+  private var hasError: Binding<Bool> {
+    .constant(!errorMessage.isEmpty)
+  }
+
+  private var canSubmit: Binding<Bool> {
+    .constant(
+      !email.isEmpty &&
+      !password.isEmpty &&
+      errorMessage.isEmpty)
+  }
+}
+
+// MARK: - State Updates
+
+extension LoginView {
+  var keyboardHeightUpdate: AnyPublisher<CGFloat, Never> {
+    injected.appState.updates(for: \.system.keyboardHeight)
   }
 }
 
@@ -50,6 +88,8 @@ struct LoginView: View {
 struct LoginView_Previews: PreviewProvider {
   static var previews: some View {
     LoginView()
+      .previewDevice("iPhone 8")
   }
 }
+
 
