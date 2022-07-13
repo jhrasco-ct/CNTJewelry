@@ -15,12 +15,13 @@ struct JewelryApp: App {
 
   var body: some Scene {
     WindowGroup {
-      let environment = AppEnvironment.bootstrap()
       ContentView(container: environment.container)
     }
   }
 
   // MARK: - Private
+
+  private let environment = AppEnvironment.bootstrap()
 
   private func configureLogger() {
     #if DEBUG

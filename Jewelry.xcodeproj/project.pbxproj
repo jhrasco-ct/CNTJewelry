@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F040719287E64C7005FB875 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F040718287E64C7005FB875 /* UIApplication+.swift */; };
 		9F0E045C286567A4008568E7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0E045B286567A4008568E7 /* LoginView.swift */; };
 		9F0E045E286582A5008568E7 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0E045D286582A5008568E7 /* BackButton.swift */; };
 		9F2E1B6128694BC20097B3F1 /* FloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2E1B6028694BC20097B3F1 /* FloatingTextField.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F040718287E64C7005FB875 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 		9F0E045B286567A4008568E7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9F0E045D286582A5008568E7 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		9F2E1B6028694BC20097B3F1 /* FloatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextField.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				9F2E1B67286979960097B3F1 /* Binding+.swift */,
+				9F040718287E64C7005FB875 /* UIApplication+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 			files = (
 				9F6851F1285823E6003B7876 /* ContentView.swift in Sources */,
 				9F68520E285880F4003B7876 /* OnboardingView.swift in Sources */,
+				9F040719287E64C7005FB875 /* UIApplication+.swift in Sources */,
 				9F0E045E286582A5008568E7 /* BackButton.swift in Sources */,
 				9F4E17E128596AC40041F79E /* ColorResource+SwiftUI.swift in Sources */,
 				9F4E17E328596AD80041F79E /* ImageResource+SwiftUI.swift in Sources */,

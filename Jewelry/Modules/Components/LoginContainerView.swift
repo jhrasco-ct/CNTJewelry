@@ -8,19 +8,21 @@
 import SwiftUI
 
 struct LoginContainerView<Content>: View where Content: View {
-  let content: (GeometryProxy) -> Content
+  let proxy: GeometryProxy
+  let content: () -> Content
 
-  init(@ViewBuilder content: @escaping (GeometryProxy) -> Content) {
+  init(proxy: GeometryProxy, @ViewBuilder content: @escaping () -> Content) {
     self.content = content
+    self.proxy = proxy
   }
 
   var body: some View {
-    GeometryReader { proxy in
+    ZStack(alignment: .top) {
       Image(R.image.backgroundTexture1)
         .resizable()
-        .scaledToFill()
-        .ignoresSafeArea()
-        .frame(height: proxy.size.height * 0.66)
+        .frame(height: proxy.size.height * 0.63)
+        .aspectRatio(contentMode: .fit)
+        .offset(y: -proxy.safeAreaInsets.top)
 
       VStack(alignment: .leading, spacing: .zero) {
         ZStack(alignment: .leading) {
@@ -33,7 +35,7 @@ struct LoginContainerView<Content>: View where Content: View {
 
         Spacer()
 
-        content(proxy)
+        content()
       }
       .foregroundColor(Color(R.color.white))
       .padding(.vertical, 50.0)
@@ -53,7 +55,9 @@ struct LoginContainerView<Content>: View where Content: View {
 
 struct LoginContainerView_Previews: PreviewProvider {
   static var previews: some View {
-    LoginContainerView { _ in }
+    GeometryReader {
+      LoginContainerView(proxy: $0) { }
+    }
   }
 }
 

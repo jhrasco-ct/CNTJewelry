@@ -26,7 +26,9 @@ struct RealSystemEventsHandler: SystemEventsHandler {
     let appState = container.appState
     NotificationCenter.default.keyboardHeightPublisher
       .sink { [appState] height in
-        appState[\.system.keyboardHeight] = height
+        let bottomSafeAreaInset = UIApplication.shared.keyWindow?.safeAreaInsets.bottom
+        let totalHeight = height - (bottomSafeAreaInset ?? 0.0)
+        appState[\.system.keyboardHeight] = max(totalHeight, 0.0)
       }
       .store(in: cancelBag)
   }
