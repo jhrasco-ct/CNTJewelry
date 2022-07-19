@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9F040719287E64C7005FB875 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F040718287E64C7005FB875 /* UIApplication+.swift */; };
+		9F04071B287E73C0005FB875 /* MessageHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04071A287E73C0005FB875 /* MessageHUD.swift */; };
+		9F04071D287E8113005FB875 /* MessageHUDModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04071C287E8113005FB875 /* MessageHUDModifier.swift */; };
 		9F0E045C286567A4008568E7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0E045B286567A4008568E7 /* LoginView.swift */; };
 		9F0E045E286582A5008568E7 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0E045D286582A5008568E7 /* BackButton.swift */; };
 		9F2E1B6128694BC20097B3F1 /* FloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2E1B6028694BC20097B3F1 /* FloatingTextField.swift */; };
@@ -30,6 +32,9 @@
 		9F527BCE285AF1D9002E1484 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F527BCD285AF1D9002E1484 /* AppEnvironment.swift */; };
 		9F527BD0285AF44E002E1484 /* SystemEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F527BCF285AF44E002E1484 /* SystemEventsHandler.swift */; };
 		9F527BD3285B05F3002E1484 /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 9F527BD2285B05F3002E1484 /* SwiftyBeaver */; };
+		9F60AA5D2886C07600744712 /* BriefingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F60AA5C2886C07600744712 /* BriefingView.swift */; };
+		9F60AA612886C1DA00744712 /* BriefingBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F60AA602886C1DA00744712 /* BriefingBottomView.swift */; };
+		9F60AA642886D05900744712 /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F60AA632886D05900744712 /* CircularButton.swift */; };
 		9F6851EF285823E6003B7876 /* JewelryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6851EE285823E6003B7876 /* JewelryApp.swift */; };
 		9F6851F1285823E6003B7876 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6851F0285823E6003B7876 /* ContentView.swift */; };
 		9F6851F3285823E8003B7876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6851F2285823E8003B7876 /* Assets.xcassets */; };
@@ -46,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		9F040718287E64C7005FB875 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
+		9F04071A287E73C0005FB875 /* MessageHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHUD.swift; sourceTree = "<group>"; };
+		9F04071C287E8113005FB875 /* MessageHUDModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHUDModifier.swift; sourceTree = "<group>"; };
 		9F0E045B286567A4008568E7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9F0E045D286582A5008568E7 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		9F2E1B6028694BC20097B3F1 /* FloatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextField.swift; sourceTree = "<group>"; };
@@ -68,6 +75,9 @@
 		9F527BCB285AECA4002E1484 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		9F527BCD285AF1D9002E1484 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		9F527BCF285AF44E002E1484 /* SystemEventsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemEventsHandler.swift; sourceTree = "<group>"; };
+		9F60AA5C2886C07600744712 /* BriefingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefingView.swift; sourceTree = "<group>"; };
+		9F60AA602886C1DA00744712 /* BriefingBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefingBottomView.swift; sourceTree = "<group>"; };
+		9F60AA632886D05900744712 /* CircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
 		9F6851EB285823E6003B7876 /* Jewelry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jewelry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6851EE285823E6003B7876 /* JewelryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JewelryApp.swift; sourceTree = "<group>"; };
 		9F6851F0285823E6003B7876 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +136,7 @@
 		9F4E17E8285970C80041F79E /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				9F04071C287E8113005FB875 /* MessageHUDModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -161,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				9F4E17F92859AF7D0041F79E /* LoginContainerView.swift */,
+				9F60AA602886C1DA00744712 /* BriefingBottomView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -168,8 +180,8 @@
 		9F4E17FB2859AFDE0041F79E /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				9F4E18002859B39F0041F79E /* PrimaryButton.swift */,
-				9F0E045D286582A5008568E7 /* BackButton.swift */,
+				9F60AA622886D04500744712 /* Buttons */,
+				9F04071A287E73C0005FB875 /* MessageHUD.swift */,
 				9F2E1B6028694BC20097B3F1 /* FloatingTextField.swift */,
 				9F2E1B6428695FD90097B3F1 /* Line.swift */,
 			);
@@ -203,6 +215,16 @@
 				9FA2E62628615CEF001AD6E6 /* Logger.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9F60AA622886D04500744712 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				9F4E18002859B39F0041F79E /* PrimaryButton.swift */,
+				9F0E045D286582A5008568E7 /* BackButton.swift */,
+				9F60AA632886D05900744712 /* CircularButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		9F6851E2285823E6003B7876 = {
@@ -276,6 +298,7 @@
 				9F68520F28588100003B7876 /* PreLoginView.swift */,
 				9F0E045B286567A4008568E7 /* LoginView.swift */,
 				9F68520D285880F4003B7876 /* OnboardingView.swift */,
+				9F60AA5C2886C07600744712 /* BriefingView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -387,8 +410,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F04071D287E8113005FB875 /* MessageHUDModifier.swift in Sources */,
+				9F60AA5D2886C07600744712 /* BriefingView.swift in Sources */,
 				9F6851F1285823E6003B7876 /* ContentView.swift in Sources */,
 				9F68520E285880F4003B7876 /* OnboardingView.swift in Sources */,
+				9F60AA642886D05900744712 /* CircularButton.swift in Sources */,
 				9F040719287E64C7005FB875 /* UIApplication+.swift in Sources */,
 				9F0E045E286582A5008568E7 /* BackButton.swift in Sources */,
 				9F4E17E128596AC40041F79E /* ColorResource+SwiftUI.swift in Sources */,
@@ -400,6 +426,7 @@
 				9F4E18012859B39F0041F79E /* PrimaryButton.swift in Sources */,
 				9F6851EF285823E6003B7876 /* JewelryApp.swift in Sources */,
 				9FA2E62728615CEF001AD6E6 /* Logger.swift in Sources */,
+				9F60AA612886C1DA00744712 /* BriefingBottomView.swift in Sources */,
 				9F527BBE285ACCC2002E1484 /* DependencyInjector.swift in Sources */,
 				9FA2E62B2861643C001AD6E6 /* LocalAuthenticationInteractor.swift in Sources */,
 				9F527BD0285AF44E002E1484 /* SystemEventsHandler.swift in Sources */,
@@ -409,6 +436,7 @@
 				9F0E045C286567A4008568E7 /* LoginView.swift in Sources */,
 				9F527BC8285AE9F3002E1484 /* Loadable.swift in Sources */,
 				9F527BCE285AF1D9002E1484 /* AppEnvironment.swift in Sources */,
+				9F04071B287E73C0005FB875 /* MessageHUD.swift in Sources */,
 				9F68521028588100003B7876 /* PreLoginView.swift in Sources */,
 				9F2E1B6528695FD90097B3F1 /* Line.swift in Sources */,
 				9F4E17FA2859AF7D0041F79E /* LoginContainerView.swift in Sources */,

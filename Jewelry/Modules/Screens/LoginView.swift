@@ -33,23 +33,17 @@ struct LoginView: View {
               .frame(height: proxy.size.height * 0.02)
 
             Group {
-              FloatingTextField(placeholder: "EMAIL", text: $email, hasError: hasError)
-                .keyboardType(.emailAddress)
-                .submitLabel(.next)
-                .onSubmit {
-                  passwordFocused = true
-                }
-
+              emailTextField
               Spacer()
                 .frame(height: 28.0)
 
-              FloatingTextField(placeholder: "PASSWORD", text: $password, hasError: hasError, isSecured: true)
-                .focused($passwordFocused)
-                .submitLabel(.done)
+              passwordTextField
 
               Spacer(minLength: 30.0 + proxy.size.height * 0.02)
 
-              PrimaryButton(title: "LOG IN", isDisabled: canSubmit.not()) { }
+              PrimaryButton(title: "LOG IN", isDisabled: canSubmit.not()) {
+                errorMessage = "Incorrect username and password.\nPlease try again."
+              }
             }
             .padding(.horizontal, 32.0)
           }
@@ -60,14 +54,21 @@ struct LoginView: View {
       }
       .padding(.bottom, keyboardHeight)
     }
-    .onReceive(keyboardHeightUpdate) { height in
-      withAnimation {
-        self.keyboardHeight = height
-      }
-    }
     .background(Color(R.color.codGray))
     .ignoresSafeArea(.keyboard)
     .navigationBarHidden(true)
+    .messageHUD(isPresented: hasError, message: errorMessage)
+    .onReceive(keyboardHeightUpdate) { height in
+      withAnimation {
+        keyboardHeight = height
+      }
+    }
+    .onChange(of: email) { _ in
+      errorMessage = String()
+    }
+    .onChange(of: password) { _ in
+      errorMessage = String()
+    }
   }
 
   // MARK: - Private
@@ -88,6 +89,21 @@ struct LoginView: View {
     }
     .padding(.leading, 36.0)
     .padding(.top, 10.0)
+  }
+
+  private var emailTextField: some View {
+    FloatingTextField(placeholder: "EMAIL", text: $email, hasError: hasError)
+      .keyboardType(.emailAddress)
+      .submitLabel(.next)
+      .onSubmit {
+        passwordFocused = true
+      }
+  }
+
+  private var passwordTextField: some View {
+    FloatingTextField(placeholder: "PASSWORD", text: $password, hasError: hasError, isSecured: true)
+      .focused($passwordFocused)
+      .submitLabel(.done)
   }
 
   private var hasError: Binding<Bool> {

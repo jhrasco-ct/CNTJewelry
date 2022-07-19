@@ -22,7 +22,7 @@ struct PrimaryButton: View {
   }
 
   var body: some View {
-    Button(action: action, label: {
+    Button(action: action) {
       Text(title)
         .font(R.font.brilliantCutProB7Bold, size: 12.0)
         .frame(maxWidth: .infinity)
@@ -30,7 +30,7 @@ struct PrimaryButton: View {
         .background(isDisabled ? .clear : Color(R.color.monza))
         .foregroundColor(Color(R.color.white))
         .border(Color(R.color.white), width: isDisabled ? 1.0 : 0.0)
-    })
+    }
     .disabled(isDisabled)
     .opacity(isDisabled ? 0.3 : 1.0)
   }
