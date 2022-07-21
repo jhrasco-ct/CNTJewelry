@@ -16,6 +16,9 @@ struct LoginView: View {
     GeometryReader { proxy in
       ScrollView(showsIndicators: false) {
         GeometryReader { _ in
+          backButton
+            .zIndex(1)
+
           LoginContainerView(proxy: proxy) {
             Spacer()
               .frame(height: proxy.size.height * 0.14)
@@ -42,13 +45,12 @@ struct LoginView: View {
               Spacer(minLength: 30.0 + proxy.size.height * 0.02)
 
               PrimaryButton(title: "LOG IN", isDisabled: canSubmit.not()) {
-                errorMessage = "Incorrect username and password.\nPlease try again."
+                // errorMessage = "Incorrect username and password.\nPlease try again."
+                injected.appState[\.userData.isAuthenticated] = true
               }
             }
             .padding(.horizontal, 32.0)
           }
-
-          backButton
         }
         .frame(height: proxy.size.height)
       }

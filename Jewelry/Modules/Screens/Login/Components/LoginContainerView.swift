@@ -26,11 +26,11 @@ struct LoginContainerView<Content>: View where Content: View {
 
       VStack(alignment: .leading, spacing: .zero) {
         ZStack(alignment: .leading) {
-          Image(R.image.polygon)
-
           Text("CNT\nJEWELRY")
             .font(R.font.brilliantCutProB7Medium, size: 35.0)
             .padding(.leading, 32.0)
+
+          Image(R.image.polygon)
         }
 
         Spacer()

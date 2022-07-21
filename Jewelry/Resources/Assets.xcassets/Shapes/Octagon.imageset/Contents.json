@@ -1,0 +1,26 @@
+{
+  "images" : [
+    {
+      "filename" : "Octagon.svg",
+      "idiom" : "universal",
+      "resizing" : {
+        "cap-insets" : {
+          "bottom" : 60,
+          "left" : 60,
+          "right" : 60,
+          "top" : 60
+        },
+        "center" : {
+          "height" : 1,
+          "mode" : "stretch",
+          "width" : 1
+        },
+        "mode" : "9-part"
+      }
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

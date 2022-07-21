@@ -18,4 +18,3 @@ struct OnboardingView_Previews: PreviewProvider {
     OnboardingView()
   }
 }
-

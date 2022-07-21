@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct Line: Shape {
+  var axis = Axis.horizontal
+
   func path(in rect: CGRect) -> Path {
     var path = Path()
     path.move(to: .zero)
-    path.addLine(to: CGPoint(x: rect.width, y: .zero))
+    if axis == .horizontal {
+      path.addLine(to: CGPoint(x: rect.width, y: .zero))
+    } else {
+      path.addLine(to: CGPoint(x: .zero, y: rect.height))
+    }
     return path
   }
 }
