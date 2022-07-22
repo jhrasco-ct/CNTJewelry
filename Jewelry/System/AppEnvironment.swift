@@ -14,7 +14,7 @@ struct AppEnvironment {
 
 extension AppEnvironment {
   static func bootstrap() -> AppEnvironment {
-    let appState = Store<AppState>(AppState())
+    let appState = Store<AppState>(AppState(userData: .init(isAuthenticated: true)))
     let interactors = configuredInteractors(appState: appState)
     let diContainer = DIContainer(appState: appState, interactors: interactors)
     let systemEventsHandler = RealSystemEventsHandler(container: diContainer)

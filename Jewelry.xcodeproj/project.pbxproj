@@ -34,11 +34,11 @@
 		9F527BCE285AF1D9002E1484 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F527BCD285AF1D9002E1484 /* AppEnvironment.swift */; };
 		9F527BD0285AF44E002E1484 /* SystemEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F527BCF285AF44E002E1484 /* SystemEventsHandler.swift */; };
 		9F527BD3285B05F3002E1484 /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 9F527BD2285B05F3002E1484 /* SwiftyBeaver */; };
-		9F574C4F2887BFE80085A708 /* BriefingTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F574C4E2887BFE80085A708 /* BriefingTopView.swift */; };
-		9F574C56288809830085A708 /* BriefingBotiqueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F574C55288809830085A708 /* BriefingBotiqueView.swift */; };
-		9F574C58288809A20085A708 /* BriefingWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F574C57288809A20085A708 /* BriefingWelcomeView.swift */; };
-		9F60AA5D2886C07600744712 /* BriefingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F60AA5C2886C07600744712 /* BriefingView.swift */; };
-		9F60AA612886C1DA00744712 /* BriefingBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F60AA602886C1DA00744712 /* BriefingBottomView.swift */; };
+		9F574C4F2887BFE80085A708 /* BriefTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F574C4E2887BFE80085A708 /* BriefTopView.swift */; };
+		9F574C56288809830085A708 /* BriefSalesTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F574C55288809830085A708 /* BriefSalesTrackerView.swift */; };
+		9F574C58288809A20085A708 /* BriefWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F574C57288809A20085A708 /* BriefWelcomeView.swift */; };
+		9F60AA5D2886C07600744712 /* BriefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F60AA5C2886C07600744712 /* BriefView.swift */; };
+		9F60AA612886C1DA00744712 /* BriefBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F60AA602886C1DA00744712 /* BriefBottomView.swift */; };
 		9F60AA642886D05900744712 /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F60AA632886D05900744712 /* CircularButton.swift */; };
 		9F6851EF285823E6003B7876 /* JewelryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6851EE285823E6003B7876 /* JewelryApp.swift */; };
 		9F6851F1285823E6003B7876 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6851F0285823E6003B7876 /* ContentView.swift */; };
@@ -49,6 +49,10 @@
 		9F68520E285880F4003B7876 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68520D285880F4003B7876 /* OnboardingView.swift */; };
 		9F68521028588100003B7876 /* PreLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68520F28588100003B7876 /* PreLoginView.swift */; };
 		9F6852132858840F003B7876 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6852122858840F003B7876 /* Colors.xcassets */; };
+		9F92D34F288A6B2600CF6981 /* BriefArticleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F92D34E288A6B2600CF6981 /* BriefArticleHeaderView.swift */; };
+		9F92D351288AAF7200CF6981 /* FancyCutProB7-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F92D350288AAF7200CF6981 /* FancyCutProB7-Bold.otf */; };
+		9F92D353288AB52300CF6981 /* BriefArticleContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F92D352288AB52300CF6981 /* BriefArticleContentView.swift */; };
+		9F92D355288AB5AC00CF6981 /* BriefArticleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F92D354288AB5AC00CF6981 /* BriefArticleCardView.swift */; };
 		9FA2E62728615CEF001AD6E6 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA2E62628615CEF001AD6E6 /* Logger.swift */; };
 		9FA2E629286163A0001AD6E6 /* InteractorsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA2E628286163A0001AD6E6 /* InteractorsContainer.swift */; };
 		9FA2E62B2861643C001AD6E6 /* LocalAuthenticationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA2E62A2861643C001AD6E6 /* LocalAuthenticationInteractor.swift */; };
@@ -82,11 +86,11 @@
 		9F527BCB285AECA4002E1484 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		9F527BCD285AF1D9002E1484 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		9F527BCF285AF44E002E1484 /* SystemEventsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemEventsHandler.swift; sourceTree = "<group>"; };
-		9F574C4E2887BFE80085A708 /* BriefingTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefingTopView.swift; sourceTree = "<group>"; };
-		9F574C55288809830085A708 /* BriefingBotiqueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefingBotiqueView.swift; sourceTree = "<group>"; };
-		9F574C57288809A20085A708 /* BriefingWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefingWelcomeView.swift; sourceTree = "<group>"; };
-		9F60AA5C2886C07600744712 /* BriefingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefingView.swift; sourceTree = "<group>"; };
-		9F60AA602886C1DA00744712 /* BriefingBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefingBottomView.swift; sourceTree = "<group>"; };
+		9F574C4E2887BFE80085A708 /* BriefTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefTopView.swift; sourceTree = "<group>"; };
+		9F574C55288809830085A708 /* BriefSalesTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefSalesTrackerView.swift; sourceTree = "<group>"; };
+		9F574C57288809A20085A708 /* BriefWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefWelcomeView.swift; sourceTree = "<group>"; };
+		9F60AA5C2886C07600744712 /* BriefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefView.swift; sourceTree = "<group>"; };
+		9F60AA602886C1DA00744712 /* BriefBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefBottomView.swift; sourceTree = "<group>"; };
 		9F60AA632886D05900744712 /* CircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
 		9F6851EB285823E6003B7876 /* Jewelry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jewelry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6851EE285823E6003B7876 /* JewelryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JewelryApp.swift; sourceTree = "<group>"; };
@@ -97,6 +101,10 @@
 		9F68520D285880F4003B7876 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		9F68520F28588100003B7876 /* PreLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLoginView.swift; sourceTree = "<group>"; };
 		9F6852122858840F003B7876 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		9F92D34E288A6B2600CF6981 /* BriefArticleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefArticleHeaderView.swift; sourceTree = "<group>"; };
+		9F92D350288AAF7200CF6981 /* FancyCutProB7-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutProB7-Bold.otf"; sourceTree = "<group>"; };
+		9F92D352288AB52300CF6981 /* BriefArticleContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefArticleContentView.swift; sourceTree = "<group>"; };
+		9F92D354288AB5AC00CF6981 /* BriefArticleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefArticleCardView.swift; sourceTree = "<group>"; };
 		9FA2E62628615CEF001AD6E6 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		9FA2E628286163A0001AD6E6 /* InteractorsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorsContainer.swift; sourceTree = "<group>"; };
 		9FA2E62A2861643C001AD6E6 /* LocalAuthenticationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationInteractor.swift; sourceTree = "<group>"; };
@@ -184,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				9F4E17F62859A3970041F79E /* FancyCutProB7-Regular.otf */,
+				9F92D350288AAF7200CF6981 /* FancyCutProB7-Bold.otf */,
 			);
 			path = FancyCutPro;
 			sourceTree = "<group>";
@@ -236,22 +245,25 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		9F574C50288806850085A708 /* Briefing */ = {
+		9F574C50288806850085A708 /* Brief */ = {
 			isa = PBXGroup;
 			children = (
 				9F574C512888069F0085A708 /* Components */,
-				9F60AA5C2886C07600744712 /* BriefingView.swift */,
+				9F60AA5C2886C07600744712 /* BriefView.swift */,
 			);
-			path = Briefing;
+			path = Brief;
 			sourceTree = "<group>";
 		};
 		9F574C512888069F0085A708 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				9F60AA602886C1DA00744712 /* BriefingBottomView.swift */,
-				9F574C4E2887BFE80085A708 /* BriefingTopView.swift */,
-				9F574C57288809A20085A708 /* BriefingWelcomeView.swift */,
-				9F574C55288809830085A708 /* BriefingBotiqueView.swift */,
+				9F60AA602886C1DA00744712 /* BriefBottomView.swift */,
+				9F574C4E2887BFE80085A708 /* BriefTopView.swift */,
+				9F574C57288809A20085A708 /* BriefWelcomeView.swift */,
+				9F574C55288809830085A708 /* BriefSalesTrackerView.swift */,
+				9F92D352288AB52300CF6981 /* BriefArticleContentView.swift */,
+				9F92D34E288A6B2600CF6981 /* BriefArticleHeaderView.swift */,
+				9F92D354288AB5AC00CF6981 /* BriefArticleCardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -361,7 +373,7 @@
 				9F574C53288806C40085A708 /* Content */,
 				9F574C54288806D30085A708 /* Onboarding */,
 				9F574C52288806AE0085A708 /* Login */,
-				9F574C50288806850085A708 /* Briefing */,
+				9F574C50288806850085A708 /* Brief */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -435,6 +447,7 @@
 			files = (
 				9F4E17EE285978BB0041F79E /* BrilliantCutProB7-Medium.otf in Resources */,
 				9F4E17F72859A3970041F79E /* FancyCutProB7-Regular.otf in Resources */,
+				9F92D351288AAF7200CF6981 /* FancyCutProB7-Bold.otf in Resources */,
 				9F3FBFD028892E38004F0B38 /* FancyCutCondProB7-Bold.otf in Resources */,
 				9F6852132858840F003B7876 /* Colors.xcassets in Resources */,
 				9F2E1B6328694D940097B3F1 /* BrilliantCutProB7-Regular.otf in Resources */,
@@ -475,10 +488,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F04071D287E8113005FB875 /* MessageHUDModifier.swift in Sources */,
-				9F60AA5D2886C07600744712 /* BriefingView.swift in Sources */,
+				9F60AA5D2886C07600744712 /* BriefView.swift in Sources */,
 				9F6851F1285823E6003B7876 /* ContentView.swift in Sources */,
 				9F68520E285880F4003B7876 /* OnboardingView.swift in Sources */,
-				9F574C4F2887BFE80085A708 /* BriefingTopView.swift in Sources */,
+				9F574C4F2887BFE80085A708 /* BriefTopView.swift in Sources */,
 				9F60AA642886D05900744712 /* CircularButton.swift in Sources */,
 				9F040719287E64C7005FB875 /* UIApplication+.swift in Sources */,
 				9F0E045E286582A5008568E7 /* BackButton.swift in Sources */,
@@ -486,18 +499,21 @@
 				9F4E17E328596AD80041F79E /* ImageResource+SwiftUI.swift in Sources */,
 				9F2E1B68286979960097B3F1 /* Binding+.swift in Sources */,
 				9F4E17E528596B150041F79E /* FontResource+SwiftUI.swift in Sources */,
-				9F574C56288809830085A708 /* BriefingBotiqueView.swift in Sources */,
+				9F574C56288809830085A708 /* BriefSalesTrackerView.swift in Sources */,
 				9FA2E629286163A0001AD6E6 /* InteractorsContainer.swift in Sources */,
 				9F527BCA285AEAC0002E1484 /* CancelBag.swift in Sources */,
 				9F4E18012859B39F0041F79E /* PrimaryButton.swift in Sources */,
 				9F6851EF285823E6003B7876 /* JewelryApp.swift in Sources */,
 				9FA2E62728615CEF001AD6E6 /* Logger.swift in Sources */,
-				9F60AA612886C1DA00744712 /* BriefingBottomView.swift in Sources */,
+				9F92D353288AB52300CF6981 /* BriefArticleContentView.swift in Sources */,
+				9F60AA612886C1DA00744712 /* BriefBottomView.swift in Sources */,
 				9F527BBE285ACCC2002E1484 /* DependencyInjector.swift in Sources */,
 				9FA2E62B2861643C001AD6E6 /* LocalAuthenticationInteractor.swift in Sources */,
-				9F574C58288809A20085A708 /* BriefingWelcomeView.swift in Sources */,
+				9F574C58288809A20085A708 /* BriefWelcomeView.swift in Sources */,
 				9F3FBFD228896DF6004F0B38 /* FrameSizeModifier.swift in Sources */,
+				9F92D34F288A6B2600CF6981 /* BriefArticleHeaderView.swift in Sources */,
 				9F527BD0285AF44E002E1484 /* SystemEventsHandler.swift in Sources */,
+				9F92D355288AB5AC00CF6981 /* BriefArticleCardView.swift in Sources */,
 				9F527BCC285AECA4002E1484 /* AppState.swift in Sources */,
 				9F527BC6285AE9A4002E1484 /* Store.swift in Sources */,
 				9F2E1B6128694BC20097B3F1 /* FloatingTextField.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  BriefingTopView.swift
+//  BriefTopView.swift
 //  Jewelry
 //
 //  Created by John Harold Rasco on 7/20/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BriefingTopView: View {
+struct BriefTopView: View {
   var body: some View {
     VStack(spacing: 16.0) {
       HStack(spacing: 16.0) {
@@ -71,6 +71,6 @@ struct BriefingTopView: View {
 
 struct BriefingTopView_Previews: PreviewProvider {
   static var previews: some View {
-    BriefingTopView()
+    BriefTopView()
   }
 }

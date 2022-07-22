@@ -1,5 +1,5 @@
 //
-//  BriefingBotiqueView.swift
+//  BriefSalesTrackerView.swift
 //  Jewelry
 //
 //  Created by John Harold Rasco on 7/20/22.
@@ -7,34 +7,43 @@
 
 import SwiftUI
 
-struct BriefingBotiqueView: View {
+struct BriefSalesTrackerView: View {
   @State var contentHeight = CGFloat.zero
+  @State var viewHeight = CGFloat.zero
 
   var body: some View {
     GeometryReader { proxy in
-      backgroundView(
-        proxy: proxy,
-        preferredHeight: contentHeight)
+      ZStack(alignment: .topLeading) {
+        backgroundView(
+          proxy: proxy,
+          preferredHeight: contentHeight)
 
-      VStack(spacing: .zero) {
-        titleView(proxy: proxy)
+        VStack(spacing: .zero) {
+          titleView(proxy: proxy)
+            .padding(.leading, 32.0)
+
+          Spacer(minLength: 24.0)
+
+          HStack(spacing: 12.0) {
+            pageView(proxy: proxy)
+            pageView(proxy: proxy, isPlaceholder: true)
+          }
           .padding(.leading, 32.0)
-
-        Spacer(minLength: 24.0)
-
-        HStack(spacing: 12.0) {
-          pageView(proxy: proxy)
-          pageView(proxy: proxy, isPlaceholder: true)
+          .frame(width: proxy.size.width, alignment: .leading)
+          .clipped()
         }
-        .padding(.leading, 32.0)
-        .frame(width: proxy.size.width, alignment: .leading)
-        .clipped()
+        .padding(.top, 32.0)
+        .onUpdateFrameSize {
+          contentHeight = $0.height
+        }
       }
-      .padding(.top, 32.0)
       .onUpdateFrameSize {
-        contentHeight = $0.height
+        viewHeight = $0.height
       }
     }
+    .frame(height: viewHeight)
+    .padding(.top, 12.0)
+    .padding(.bottom, 22.0)
   }
 
   // MARK: - Private
@@ -56,15 +65,13 @@ struct BriefingBotiqueView: View {
   }
 
   private func backgroundView(proxy: GeometryProxy, preferredHeight: CGFloat) -> some View {
-    VStack {
-      Image(R.image.octagon)
-        .renderingMode(.template)
-        .foregroundColor(Color(R.color.monza))
-        .frame(
-          width: proxy.size.width * Constant.octagonWidthRatio,
-          height: preferredHeight * 0.85)
-        .offset(x: Constant.octagonXOffset)
-    }
+    Image(R.image.octagon)
+      .renderingMode(.template)
+      .foregroundColor(Color(R.color.monza))
+      .frame(
+        width: proxy.size.width * Constant.octagonWidthRatio,
+        height: preferredHeight * 0.85)
+      .offset(x: Constant.octagonXOffset)
   }
 
   private func pageView(proxy: GeometryProxy, isPlaceholder: Bool = false) -> some View {
@@ -124,7 +131,7 @@ struct BriefingBotiqueView_Previews: PreviewProvider {
     GeometryReader { _ in
       ScrollView(showsIndicators: false) {
         VStack(spacing: .zero) {
-          BriefingBotiqueView()
+          BriefSalesTrackerView()
         }
       }
     }

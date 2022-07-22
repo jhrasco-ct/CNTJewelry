@@ -16,7 +16,7 @@ struct ContentView: View {
   var body: some View {
     Group {
       if isAuthenticated {
-        BriefingView()
+        BriefView()
           .inject(container)
       } else {
         PreLoginView()

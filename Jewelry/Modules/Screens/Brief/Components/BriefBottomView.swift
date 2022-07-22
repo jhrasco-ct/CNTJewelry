@@ -1,5 +1,5 @@
 //
-//  BriefingBottomView.swift
+//  BriefBottomView.swift
 //  Jewelry
 //
 //  Created by John Harold Rasco on 7/19/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BriefingBottomView: View {
+struct BriefBottomView: View {
   var body: some View {
     HStack(
       alignment: .center,
@@ -77,6 +77,6 @@ struct BriefingBottomView: View {
 
 struct BriefingBottomView_Previews: PreviewProvider {
   static var previews: some View {
-    BriefingBottomView()
+    BriefBottomView()
   }
 }

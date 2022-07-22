@@ -1,5 +1,5 @@
 //
-//  BriefingWelcomeView.swift
+//  BriefWelcomeView.swift
 //  Jewelry
 //
 //  Created by John Harold Rasco on 7/20/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BriefingWelcomeView: View {
+struct BriefWelcomeView: View {
   var body: some View {
     HStack {
       VStack(alignment: .leading, spacing: 9.0) {
@@ -28,6 +28,6 @@ struct BriefingWelcomeView: View {
 
 struct BriefingWelcomeView_Previews: PreviewProvider {
   static var previews: some View {
-    BriefingWelcomeView()
+    BriefWelcomeView()
   }
 }
