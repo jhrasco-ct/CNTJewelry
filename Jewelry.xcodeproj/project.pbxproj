@@ -49,6 +49,11 @@
 		9F68520E285880F4003B7876 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68520D285880F4003B7876 /* OnboardingView.swift */; };
 		9F68521028588100003B7876 /* PreLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68520F28588100003B7876 /* PreLoginView.swift */; };
 		9F6852132858840F003B7876 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6852122858840F003B7876 /* Colors.xcassets */; };
+		9F7765A9288E3C3F00B5FB11 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7765A8288E3C3F00B5FB11 /* Date+.swift */; };
+		9F7765AB288E5FC200B5FB11 /* FancyCutProB7-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F7765AA288E5FC200B5FB11 /* FancyCutProB7-Light.otf */; };
+		9F7765AD288E821700B5FB11 /* BriefTakeawayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7765AC288E821700B5FB11 /* BriefTakeawayCardView.swift */; };
+		9F7765AF288EA32000B5FB11 /* DashLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7765AE288EA32000B5FB11 /* DashLine.swift */; };
+		9F7765B2288EAD7800B5FB11 /* BriefItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7765B1288EAD7800B5FB11 /* BriefItem.swift */; };
 		9F92D34F288A6B2600CF6981 /* BriefArticleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F92D34E288A6B2600CF6981 /* BriefArticleHeaderView.swift */; };
 		9F92D351288AAF7200CF6981 /* FancyCutProB7-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F92D350288AAF7200CF6981 /* FancyCutProB7-Bold.otf */; };
 		9F92D353288AB52300CF6981 /* BriefArticleContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F92D352288AB52300CF6981 /* BriefArticleContentView.swift */; };
@@ -101,6 +106,11 @@
 		9F68520D285880F4003B7876 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		9F68520F28588100003B7876 /* PreLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLoginView.swift; sourceTree = "<group>"; };
 		9F6852122858840F003B7876 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		9F7765A8288E3C3F00B5FB11 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		9F7765AA288E5FC200B5FB11 /* FancyCutProB7-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutProB7-Light.otf"; sourceTree = "<group>"; };
+		9F7765AC288E821700B5FB11 /* BriefTakeawayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefTakeawayCardView.swift; sourceTree = "<group>"; };
+		9F7765AE288EA32000B5FB11 /* DashLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashLine.swift; sourceTree = "<group>"; };
+		9F7765B1288EAD7800B5FB11 /* BriefItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefItem.swift; sourceTree = "<group>"; };
 		9F92D34E288A6B2600CF6981 /* BriefArticleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefArticleHeaderView.swift; sourceTree = "<group>"; };
 		9F92D350288AAF7200CF6981 /* FancyCutProB7-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutProB7-Bold.otf"; sourceTree = "<group>"; };
 		9F92D352288AB52300CF6981 /* BriefArticleContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefArticleContentView.swift; sourceTree = "<group>"; };
@@ -128,6 +138,7 @@
 			children = (
 				9F2E1B67286979960097B3F1 /* Binding+.swift */,
 				9F040718287E64C7005FB875 /* UIApplication+.swift */,
+				9F7765A8288E3C3F00B5FB11 /* Date+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -191,6 +202,7 @@
 		9F4E17F32859A2580041F79E /* FancyCutPro */ = {
 			isa = PBXGroup;
 			children = (
+				9F7765AA288E5FC200B5FB11 /* FancyCutProB7-Light.otf */,
 				9F4E17F62859A3970041F79E /* FancyCutProB7-Regular.otf */,
 				9F92D350288AAF7200CF6981 /* FancyCutProB7-Bold.otf */,
 			);
@@ -212,6 +224,7 @@
 				9F04071A287E73C0005FB875 /* MessageHUD.swift */,
 				9F2E1B6028694BC20097B3F1 /* FloatingTextField.swift */,
 				9F2E1B6428695FD90097B3F1 /* Line.swift */,
+				9F7765AE288EA32000B5FB11 /* DashLine.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -264,6 +277,7 @@
 				9F92D352288AB52300CF6981 /* BriefArticleContentView.swift */,
 				9F92D34E288A6B2600CF6981 /* BriefArticleHeaderView.swift */,
 				9F92D354288AB5AC00CF6981 /* BriefArticleCardView.swift */,
+				9F7765AC288E821700B5FB11 /* BriefTakeawayCardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -328,6 +342,7 @@
 				9F527BC4285AE998002E1484 /* Utilities */,
 				9F2E1B66286979840097B3F1 /* Extensions */,
 				9F527BBF285ADFF3002E1484 /* Interactors */,
+				9F7765B0288EAD3900B5FB11 /* Models */,
 				9F4E17E7285970880041F79E /* UI */,
 				9F6851FC28582E42003B7876 /* Modules */,
 				9F68520028582EA0003B7876 /* Resources */,
@@ -365,6 +380,14 @@
 				9F6851F5285823E8003B7876 /* Preview Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		9F7765B0288EAD3900B5FB11 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F7765B1288EAD7800B5FB11 /* BriefItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		9FA2E62C2861B425001AD6E6 /* Screens */ = {
@@ -447,6 +470,7 @@
 			files = (
 				9F4E17EE285978BB0041F79E /* BrilliantCutProB7-Medium.otf in Resources */,
 				9F4E17F72859A3970041F79E /* FancyCutProB7-Regular.otf in Resources */,
+				9F7765AB288E5FC200B5FB11 /* FancyCutProB7-Light.otf in Resources */,
 				9F92D351288AAF7200CF6981 /* FancyCutProB7-Bold.otf in Resources */,
 				9F3FBFD028892E38004F0B38 /* FancyCutCondProB7-Bold.otf in Resources */,
 				9F6852132858840F003B7876 /* Colors.xcassets in Resources */,
@@ -487,6 +511,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7765A9288E3C3F00B5FB11 /* Date+.swift in Sources */,
 				9F04071D287E8113005FB875 /* MessageHUDModifier.swift in Sources */,
 				9F60AA5D2886C07600744712 /* BriefView.swift in Sources */,
 				9F6851F1285823E6003B7876 /* ContentView.swift in Sources */,
@@ -515,11 +540,14 @@
 				9F527BD0285AF44E002E1484 /* SystemEventsHandler.swift in Sources */,
 				9F92D355288AB5AC00CF6981 /* BriefArticleCardView.swift in Sources */,
 				9F527BCC285AECA4002E1484 /* AppState.swift in Sources */,
+				9F7765B2288EAD7800B5FB11 /* BriefItem.swift in Sources */,
 				9F527BC6285AE9A4002E1484 /* Store.swift in Sources */,
 				9F2E1B6128694BC20097B3F1 /* FloatingTextField.swift in Sources */,
 				9F0E045C286567A4008568E7 /* LoginView.swift in Sources */,
+				9F7765AF288EA32000B5FB11 /* DashLine.swift in Sources */,
 				9F527BC8285AE9F3002E1484 /* Loadable.swift in Sources */,
 				9F527BCE285AF1D9002E1484 /* AppEnvironment.swift in Sources */,
+				9F7765AD288E821700B5FB11 /* BriefTakeawayCardView.swift in Sources */,
 				9F04071B287E73C0005FB875 /* MessageHUD.swift in Sources */,
 				9F68521028588100003B7876 /* PreLoginView.swift in Sources */,
 				9F2E1B6528695FD90097B3F1 /* Line.swift in Sources */,

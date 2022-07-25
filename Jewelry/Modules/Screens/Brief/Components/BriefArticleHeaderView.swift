@@ -27,6 +27,7 @@ struct BriefArticleHeaderView: View {
             image: Image(R.image.sampleImage1),
             eyebrow: "EVENT",
             title: "NEW BAIGNOIRE COLLECTION",
+            description: nil,
             date: .init())
         }
         .padding([.top, .horizontal], 32.0)

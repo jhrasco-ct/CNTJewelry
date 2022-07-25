@@ -8,18 +8,15 @@
 import SwiftUI
 
 struct BriefArticleContentView: View {
-  let image: Image
+  let image: Image?
   let eyebrow: String
   let title: String
+  let description: String?
   let date: Date
 
   var body: some View {
     VStack(alignment: .leading, spacing: .zero) {
-      image
-        .resizable()
-        .scaledToFit()
-
-      Spacer(minLength: 16.0)
+      imageView
 
       Text(eyebrow)
         .font(R.font.brilliantCutProB7Bold, size: 11.0)
@@ -30,22 +27,36 @@ struct BriefArticleContentView: View {
         Text(title)
           .font(R.font.brilliantCutProB7Medium, size: 22.0)
 
-        Spacer()
+        Spacer(minLength: 50.0)
 
         bookmarkButton
       }
 
-      Spacer(minLength: 19.0)
+      descriptionView
 
-      Text("MAR. 1, 2020")
+      Spacer(minLength: 16.0)
+
+      Text(date.string(withStyle: .monthDayYear).uppercased())
         .font(R.font.fancyCutProB7Bold, size: 12.0)
 
       Spacer(minLength: 24.0)
 
-      separatorView
+      DashLine()
+        .foregroundColor(Color(R.color.moonMist))
     }
     .foregroundColor(Color(R.color.codGray))
     .fixedSize(horizontal: false, vertical: true)
+  }
+
+  @ViewBuilder
+  private var imageView: some View {
+    if let image = image {
+      image
+        .resizable()
+        .scaledToFit()
+
+      Spacer(minLength: 16.0)
+    }
   }
 
   private var bookmarkButton: some View {
@@ -59,18 +70,14 @@ struct BriefArticleContentView: View {
     }
   }
 
-  private var separatorView: some View {
-    Line()
-      .stroke(
-        style: StrokeStyle(
-          lineWidth: 2.0,
-          lineCap: .round,
-          lineJoin: .round,
-          dash: [0.08, 4.0])
-      )
-      .foregroundColor(Color(R.color.moonMist))
-      .frame(height: 1.0)
-      .offset(y: -1.0)
+  @ViewBuilder
+  private var descriptionView: some View {
+    if let description = description {
+      Spacer(minLength: 16.0)
+
+      Text(description)
+        .font(R.font.fancyCutProB7Light, size: 22.0)
+    }
   }
 }
 
@@ -80,6 +87,7 @@ struct BriefArticleContentView_Previews: PreviewProvider {
       image: Image(R.image.sampleImage1),
       eyebrow: "EVENT",
       title: "NEW BAIGNOIRE COLLECTION",
+      description: "Nam ultrices dictum nunc at tempus. Praesent bibendum tellus tellus, quis fringilla quam convallis sed lorem ipsum longer sentence bla bla something else. ",
       date: .init())
   }
 }

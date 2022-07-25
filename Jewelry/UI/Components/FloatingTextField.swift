@@ -61,10 +61,7 @@ struct FloatingTextField: View {
   @ViewBuilder
   private var underlineView: some View {
     if hasError {
-      Line()
-        .stroke(style: StrokeStyle(lineWidth: 2.0, lineCap: .round, lineJoin: .round, dash: [0.08, 4.0]))
-        .frame(height: 1.0)
-        .offset(y: -1.0)
+      DashLine()
     } else {
       Rectangle()
         .frame(height: 1.0)

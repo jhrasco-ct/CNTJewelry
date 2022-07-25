@@ -16,8 +16,54 @@ struct BriefView: View {
           BriefWelcomeView()
           BriefSalesTrackerView()
           BriefArticleHeaderView()
-          BriefArticleCardView()
+
+          BriefArticleCardView(
+            image: Image(R.image.sampleImage2),
+            eyebrow: "EYEBROW",
+            title: "BIBENDUM VEHICULA ETIAM EGESTAS AMET",
+            date: .init())
+
+          BriefTakeawayCardView(
+            image: Image(R.image.sampleRing),
+            eyebrow: "TAKEAWAY",
+            title: "CONGRATULATE MARIA",
+            description: "Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before. Its five-year mission: to explore strange new worlds again.",
+            date: .init().addingTimeInterval(-360000))
+
+          Group {
+            BriefArticleCardView(
+              image: Image(R.image.sampleImage3),
+              eyebrow: "EYEBROW",
+              title: "BIBENDUM VEHICULA ETIAM EGESTAS AMET",
+              date: .init())
+
+            BriefArticleCardView(
+              image: Image(R.image.sampleImage4),
+              eyebrow: "PANTHERE",
+              title: "THE HISTORY OF THE CARTIER PANTHÈRE BRACELET",
+              date: .init())
+
+            BriefArticleCardView(
+              image: Image(R.image.sampleImage6),
+              eyebrow: "EVENT",
+              title: "NEW BAIGNOIRE COLLECTION",
+              date: .init())
+
+            BriefArticleCardView(
+              image: Image(R.image.sampleImage5),
+              eyebrow: "EYEBROW",
+              title: "BIBENDUM VEHICULA ETIAM EGESTAS AMET",
+              date: .init())
+
+            BriefArticleCardView(
+              image: nil,
+              eyebrow: "BEST PRACTICE",
+              title: "DUIS ET JUSTO TINCIDUNT",
+              description: "Nam ultrices dictum nunc at tempus. Praesent bibendum tellus tellus, quis fringilla quam convallis sed lorem ipsum longer sentence bla bla something else.",
+              date: .init())
+          }
         }
+        .padding(.bottom, 100.0)
       }
       bottomView
     }

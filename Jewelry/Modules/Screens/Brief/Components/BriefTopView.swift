@@ -55,17 +55,8 @@ struct BriefTopView: View {
   }
 
   private var lineView: some View {
-    Line()
-      .stroke(
-        style: StrokeStyle(
-          lineWidth: 2.0,
-          lineCap: .round,
-          lineJoin: .round,
-          dash: [0.08, 4.0])
-      )
+    DashLine()
       .foregroundColor(Color(R.color.codGray))
-      .frame(height: 1.0)
-      .offset(y: -1.0)
   }
 }
 
